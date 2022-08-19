@@ -1,0 +1,27 @@
+public static void main(String[] args) {
+        Scanner object = new Scanner(System.in);
+            System.out.println("Enter starting value");
+            int x = object.nextInt();//Lowest value
+            System.out.println("Enter the ending value");
+            int y = object.nextInt();//Highest value in the range
+                
+                System.out.println("Prime Numbers: ");
+                
+                    for(int i=x; i<=y; i++){
+                        
+                            int number = i;
+                            int a = 2;
+                                int prm = 0;
+                                    while(a<=(number/2)){
+                                            
+                                        if(number%a == 0){
+                                            prm++;
+                                            break;
+                                        }
+                                        a++;
+                                    }
+                                    if(prm==0){
+                                        System.out.println(i+" ");
+                                    }
+                    }
+    }
